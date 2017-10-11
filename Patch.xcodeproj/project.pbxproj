@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417C84361F8E60F80029B7E3 /* SplintTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417C84351F8E60F80029B7E3 /* SplintTableViewController.swift */; };
+		417C84381F8E62B90029B7E3 /* Splints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417C84371F8E62B90029B7E3 /* Splints.swift */; };
 		41A44B561F6C1DBA0087E083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A44B551F6C1DBA0087E083 /* AppDelegate.swift */; };
 		41A44B581F6C1DBA0087E083 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A44B571F6C1DBA0087E083 /* ViewController.swift */; };
 		41A44B5B1F6C1DBA0087E083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A44B591F6C1DBA0087E083 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417C84351F8E60F80029B7E3 /* SplintTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplintTableViewController.swift; sourceTree = "<group>"; };
+		417C84371F8E62B90029B7E3 /* Splints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splints.swift; sourceTree = "<group>"; };
 		41A44B521F6C1DBA0087E083 /* Patch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A44B551F6C1DBA0087E083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A44B571F6C1DBA0087E083 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 				41A44B551F6C1DBA0087E083 /* AppDelegate.swift */,
 				41A44B571F6C1DBA0087E083 /* ViewController.swift */,
 				41A44B591F6C1DBA0087E083 /* Main.storyboard */,
+				417C84351F8E60F80029B7E3 /* SplintTableViewController.swift */,
+				417C84371F8E62B90029B7E3 /* Splints.swift */,
 				41A44B5C1F6C1DBA0087E083 /* Assets.xcassets */,
 				41A44B5E1F6C1DBA0087E083 /* LaunchScreen.storyboard */,
 				41A44B611F6C1DBA0087E083 /* Info.plist */,
@@ -137,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A44B581F6C1DBA0087E083 /* ViewController.swift in Sources */,
+				417C84381F8E62B90029B7E3 /* Splints.swift in Sources */,
+				417C84361F8E60F80029B7E3 /* SplintTableViewController.swift in Sources */,
 				41A44B561F6C1DBA0087E083 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 				41A44B661F6C1DBA0087E083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
