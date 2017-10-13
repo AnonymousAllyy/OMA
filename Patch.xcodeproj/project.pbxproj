@@ -58,9 +58,9 @@
 		41A44B541F6C1DBA0087E083 /* Patch */ = {
 			isa = PBXGroup;
 			children = (
+				41A44B591F6C1DBA0087E083 /* Main.storyboard */,
 				41A44B551F6C1DBA0087E083 /* AppDelegate.swift */,
 				41A44B571F6C1DBA0087E083 /* ViewController.swift */,
-				41A44B591F6C1DBA0087E083 /* Main.storyboard */,
 				417C84351F8E60F80029B7E3 /* SplintTableViewController.swift */,
 				417C84371F8E62B90029B7E3 /* Splints.swift */,
 				41A44B5C1F6C1DBA0087E083 /* Assets.xcassets */,

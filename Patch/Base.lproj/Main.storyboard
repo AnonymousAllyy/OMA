@@ -29,7 +29,7 @@
         <!--Splints Table View Controller-->
         <scene sceneID="Y8C-NQ-JTD">
             <objects>
-                <tableViewController title="Splints Table View Controller" id="BSi-1z-9Ow" customClass="ProductsTableViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Splints Table View Controller" id="BSi-1z-9Ow" customClass="ProductsTableViewController" customModule="Patch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="uSX-ym-NQp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
         <!--Categories Table View Controller-->
         <scene sceneID="QmF-nY-TLu">
             <objects>
-                <tableViewController title="Categories Table View Controller" id="cV1-Gu-nk2" customClass="ProductsTableViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Categories Table View Controller" id="cV1-Gu-nk2" customClass="ProductsTableViewController" customModule="Patch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="2Yg-k6-fBx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
