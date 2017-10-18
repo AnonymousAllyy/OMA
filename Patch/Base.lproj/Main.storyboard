@@ -5,9 +5,14 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KannadaSangamMN.ttc">
+            <string>KannadaSangamMN</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -20,16 +25,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJr-NM-gna">
+                                <rect key="frame" x="117" y="95" width="141" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwz-lU-GVC">
+                                <rect key="frame" x="100" y="432" width="158" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="ENTER"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="cV1-Gu-nk2" kind="show" id="nHd-Ev-yJr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="286" y="-732"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="lv8-N4-mxi">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="4zv-Ng-fq9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecP-1u-WL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476" y="-732"/>
         </scene>
         <!--Splints Table View Controller-->
         <scene sceneID="Y8C-NQ-JTD">
             <objects>
-                <tableViewController title="Splints Table View Controller" id="BSi-1z-9Ow" customClass="ProductsTableViewController" customModule="Patch" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Splints Table View Controller" id="BSi-1z-9Ow" customClass="SplintTableViewController" customModule="Patch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="uSX-ym-NQp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,6 +83,7 @@
                     </tableView>
                     <connections>
                         <outlet property="searchDisplayController" destination="VY6-3d-GN0" id="LXx-u0-dXT"/>
+                        <segue destination="4zv-Ng-fq9" kind="show" id="5Nj-eq-lUo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozv-5E-usr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -63,7 +96,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1474" y="-311"/>
+            <point key="canvasLocation" x="1761" y="-732"/>
         </scene>
         <!--Categories Table View Controller-->
         <scene sceneID="QmF-nY-TLu">
@@ -98,6 +131,7 @@
                     </tableView>
                     <connections>
                         <outlet property="searchDisplayController" destination="VY6-3d-GN0" id="0ZK-6H-KqR"/>
+                        <segue destination="BSi-1z-9Ow" kind="show" id="B1Z-Bt-yil"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34N-ld-8kH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -111,7 +145,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="722" y="-694"/>
+            <point key="canvasLocation" x="1054" y="-731"/>
         </scene>
     </scenes>
 </document>
