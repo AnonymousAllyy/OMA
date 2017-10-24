@@ -16,12 +16,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var sections = [
         Section(category: "Arm", splints: ["Arm Splint 1", "Arm Splint 2", "Arm Splint 3"], expanded: false),
         Section(category: "Hand", splints: ["Hand Splint 1", "Hand Splint 2", "Hand Splint 3"], expanded: false),
-        Section(category: "Leg", splints: ["Leg Splint 1", "Leg Splint 2", "LegSplint 3"], expanded: false)
+        Section(category: "Leg", splints: ["Leg Splint 1", "Leg Splint 2", "Leg Splint 3"], expanded: false)
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.endUpdates()
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ /*   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showSplint" {
             let splintVC = segue.destination as? SplintViewController
             
@@ -83,9 +83,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let indexPath = tableView.indexPath(for: cell) else {
                     return
             }
-                splintVC?.splintName = splintNames?[indexPath.row]
+                splintVC?.splintName = splintVC?[indexPath.row]
             }
         }
+    
+    */
     }
 
 
