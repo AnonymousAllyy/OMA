@@ -74,20 +74,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         tableView.endUpdates()
     }
-
- /*   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showSplint" {
-            let splintVC = segue.destination as? SplintViewController
-            
-            guard let cell = sender as? UITableViewCell,
-                let indexPath = tableView.indexPath(for: cell) else {
-                    return
-            }
-                splintVC?.splintName = splintVC?[indexPath.row]
-            }
-        }
     
-    */
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let simpleVC = SimpleVC()
+        simpleVC.customInit(imageName: sections[indexPath.section].splints[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated:true)
+        self.navigationController?.pushViewController(simpleVC, animated: true)
+    }
+
+
     }
 
 

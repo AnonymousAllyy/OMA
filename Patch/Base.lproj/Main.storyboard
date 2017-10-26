@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="60M-0a-R57">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vFq-D6-Rzr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Futura.ttc">
             <string>Futura-Medium</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
         </array>
     </customFonts>
     <scenes>
@@ -35,7 +39,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="DT8-h8-wES">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryCell" id="DT8-h8-wES">
                                         <rect key="frame" x="0.0" y="84" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DT8-h8-wES" id="EU1-XW-PZO">
@@ -59,9 +63,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="E6Y-mU-2wb" kind="show" identifier="ShowSplint" id="G43-gh-xlE"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -86,6 +87,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1412" y="-733.5832083958021"/>
+        </scene>
+        <!--Thumb SpicaVC-->
+        <scene sceneID="NQ0-Pd-hLd">
+            <objects>
+                <viewController id="FcU-W1-vPO" customClass="ThumbSpicaVC" customModule="Patch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pGL-og-MCs"/>
+                        <viewControllerLayoutGuide type="bottom" id="kNo-wG-8uh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fyp-Qf-fZO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thumb Spica Orthosis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q62-WH-mDI">
+                                <rect key="frame" x="16" y="20" width="343" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Purpose: Support / Stabilize CMC or MPJ in opposition" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SU-h1-q7i">
+                                <rect key="frame" x="16" y="91" width="343" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diagnoses: CMC/Basal Join OA, DeQuervains, MPJ Collateral Ligamen Injury" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEV-05-8el">
+                                <rect key="frame" x="16" y="168" width="343" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iC-ok-f7m">
+                                <rect key="frame" x="112" y="249" width="151" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trace the Patients Hand" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzP-rZ-BRs">
+                                <rect key="frame" x="16" y="291" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label Appropriate Bony Landmarks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28X-mU-Wbq">
+                                <rect key="frame" x="16" y="329" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cut out Design and Fit to Patient Hand/Wrist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGQ-E6-aOC">
+                                <rect key="frame" x="16" y="358" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKq-ce-CbY">
+                                <rect key="frame" x="98" y="412" width="148" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Watch Video"/>
+                                <connections>
+                                    <segue destination="a3r-xm-0t7" kind="show" identifier="ThumbSpicaVideo" id="JSR-kZ-Esn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUC-hD-ydg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2985" y="-1894"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="sCZ-Zi-w79">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="a3r-xm-0t7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOu-6p-7ns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2986" y="-1084"/>
         </scene>
         <!--Splint View Controller-->
         <scene sceneID="BlC-dV-UvR">
@@ -122,12 +208,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Z2-Zb-6ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2261.5999999999999" y="-734.48275862068976"/>
+            <point key="canvasLocation" x="2183" y="-1747"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="J6r-7H-JzS">
             <objects>
-                <viewController id="60M-0a-R57" sceneMemberID="viewController">
+                <viewController id="60M-0a-R57" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Urx-cG-IhW"/>
                         <viewControllerLayoutGuide type="bottom" id="xId-Al-PBe"/>
@@ -139,20 +225,24 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to OMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AT-FW-Q14">
                                 <rect key="frame" x="0.0" y="92" width="375" height="94"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="94" id="asK-Xr-xqq"/>
+                                    <constraint firstAttribute="height" constant="94" id="bVw-3J-WaS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBV-rs-HiZ">
-                                <rect key="frame" x="134" y="605" width="107" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubB-W7-2Ig">
+                                <rect key="frame" x="134" y="617" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="About Us">
                                     <color key="titleColor" red="1" green="0.1725431835" blue="0.248780682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opv-Np-AOV">
-                                <rect key="frame" x="91" y="298" width="193" height="71"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Opv-Np-AOV">
+                                <rect key="frame" x="124" y="298" width="127" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="NoU-if-qkL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" red="1" green="0.1725431835" blue="0.248780682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -164,18 +254,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2AT-FW-Q14" firstAttribute="centerX" secondItem="Opv-Np-AOV" secondAttribute="centerX" id="6Ud-Pc-5MP"/>
-                            <constraint firstItem="2AT-FW-Q14" firstAttribute="top" secondItem="Urx-cG-IhW" secondAttribute="bottom" constant="28" id="7bM-8f-W7n"/>
-                            <constraint firstItem="2AT-FW-Q14" firstAttribute="leading" secondItem="84G-U6-57h" secondAttribute="leading" id="WUw-Ug-1De"/>
-                            <constraint firstAttribute="trailing" secondItem="2AT-FW-Q14" secondAttribute="trailing" id="ivg-H5-6so"/>
-                            <constraint firstItem="2AT-FW-Q14" firstAttribute="centerX" secondItem="oBV-rs-HiZ" secondAttribute="centerX" id="vwm-gj-Ff2"/>
+                            <constraint firstItem="2AT-FW-Q14" firstAttribute="leading" secondItem="84G-U6-57h" secondAttribute="leading" id="9vw-gR-Eo3"/>
+                            <constraint firstItem="2AT-FW-Q14" firstAttribute="top" secondItem="Urx-cG-IhW" secondAttribute="bottom" constant="28" id="AMy-kG-Zv4"/>
+                            <constraint firstItem="Opv-Np-AOV" firstAttribute="leading" secondItem="84G-U6-57h" secondAttribute="leadingMargin" constant="75" id="JJB-1P-oIO"/>
+                            <constraint firstAttribute="trailing" secondItem="2AT-FW-Q14" secondAttribute="trailing" id="SAX-c2-Qm0"/>
+                            <constraint firstItem="2AT-FW-Q14" firstAttribute="centerX" secondItem="Opv-Np-AOV" secondAttribute="centerX" id="bs9-Vk-v6J"/>
+                            <constraint firstItem="Opv-Np-AOV" firstAttribute="centerY" secondItem="84G-U6-57h" secondAttribute="centerY" id="lG9-YW-EqU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nia-IN-TOa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55e-QW-MxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="648.79999999999995" y="-734.48275862068976"/>
+            <point key="canvasLocation" x="648.5" y="-734.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hH5-cf-QvX">
@@ -193,7 +284,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0D-yK-09o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-169" y="-734"/>
+            <point key="canvasLocation" x="-167" y="-734"/>
         </scene>
     </scenes>
 </document>
