@@ -7,36 +7,45 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class SimpleVC: UIViewController {
+    
+    var playerController = AVPlayerViewController()
+    var player:AVPlayer?
+    
+    @IBAction func playVideo(_ sender: Any) {
+        self.present(self.playerController, animated: true, completion: {  self.playerController.player?.play()})
+        
+    }
     
     var imageName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let videoString:String? = Bundle.main.path(forResource: "Cat", ofType: ".mp4")
+        if let url = videoString {
+            let videoURL = NSURL(fileURLWithPath: url)
+            self.player = AVPlayer(url: videoURL as URL)
+            self.playerController.player = self.player
+        }
+        
 
-        self.title = imageName
-        // Do any additional setup after loading the view.
+        self.title = imageName //Set Split Name in Title of Application
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+   
     
     func customInit(imageName: String) {
         self.imageName = imageName
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    */
+
 
 }

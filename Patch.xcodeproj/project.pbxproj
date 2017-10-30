@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		410B921C1FA265900068FB13 /* SimpleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B921A1FA265900068FB13 /* SimpleVC.swift */; };
 		410B921D1FA265900068FB13 /* SimpleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410B921B1FA265900068FB13 /* SimpleVC.xib */; };
+		410B921F1FA37A8C0068FB13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410B921E1FA37A8C0068FB13 /* Assets.xcassets */; };
 		41385D921F993F4100AA2FD4 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41385D911F993F4100AA2FD4 /* Section.swift */; };
 		41385D941F993F6800AA2FD4 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41385D931F993F6800AA2FD4 /* ExpandableHeaderView.swift */; };
 		41385D9B1F9A3AA100AA2FD4 /* SplintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41385D991F9A3AA100AA2FD4 /* SplintViewController.swift */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		410B921A1FA265900068FB13 /* SimpleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVC.swift; sourceTree = "<group>"; };
 		410B921B1FA265900068FB13 /* SimpleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleVC.xib; sourceTree = "<group>"; };
+		410B921E1FA37A8C0068FB13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		410B92201FA76B410068FB13 /* Cat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cat.mp4; path = ../../Cat.mp4; sourceTree = "<group>"; };
 		41385D911F993F4100AA2FD4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		41385D931F993F6800AA2FD4 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 		41385D991F9A3AA100AA2FD4 /* SplintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplintViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410B92211FA772C20068FB13 /* Option 2 */ = {
+			isa = PBXGroup;
+			children = (
+				413B5DAC1FA0D95D0060AC12 /* ThumbSpicaVC.swift */,
+			);
+			path = "Option 2";
+			sourceTree = "<group>";
+		};
 		41A44B491F6C1DBA0087E083 = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				41A44B591F6C1DBA0087E083 /* Main.storyboard */,
-				413B5DAC1FA0D95D0060AC12 /* ThumbSpicaVC.swift */,
 				41385D991F9A3AA100AA2FD4 /* SplintViewController.swift */,
 				410B921A1FA265900068FB13 /* SimpleVC.swift */,
 				410B921B1FA265900068FB13 /* SimpleVC.xib */,
@@ -75,6 +85,9 @@
 				41A44B611F6C1DBA0087E083 /* Info.plist */,
 				41A44B551F6C1DBA0087E083 /* AppDelegate.swift */,
 				41A44B5E1F6C1DBA0087E083 /* LaunchScreen.storyboard */,
+				410B921E1FA37A8C0068FB13 /* Assets.xcassets */,
+				410B92201FA76B410068FB13 /* Cat.mp4 */,
+				410B92211FA772C20068FB13 /* Option 2 */,
 			);
 			path = Patch;
 			sourceTree = "<group>";
@@ -140,6 +153,7 @@
 			files = (
 				41A44B601F6C1DBA0087E083 /* LaunchScreen.storyboard in Resources */,
 				410B921D1FA265900068FB13 /* SimpleVC.xib in Resources */,
+				410B921F1FA37A8C0068FB13 /* Assets.xcassets in Resources */,
 				41A44B5B1F6C1DBA0087E083 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
