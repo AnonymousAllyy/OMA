@@ -14,9 +14,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     var sections = [
-        Section(category: "Arm", splints: ["Arm Splint 1", "Arm Splint 2", "Arm Splint 3"], expanded: false),
-        Section(category: "Hand", splints: ["Hand Splint 1", "Hand Splint 2", "Hand Splint 3"], expanded: false),
-        Section(category: "Leg", splints: ["Leg Splint 1", "Leg Splint 2", "Leg Splint 3"], expanded: false)
+        Section(category: "Basic Orthosis", splints: ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter"], expanded: false),
+        Section(category: "Elbow (EO)", splints: ["EO 1", "EO 2", "EO 3"], expanded: false),
+        Section(category: "Wrist-Hand-Finger (WHFO)", splints: ["WHFO 1", "WHFO 2", "WHFO 3"], expanded: false),
+        Section(category: "Finger", splints: ["FO 1", "FO 2", "FO 3"], expanded: false),
+        Section(category: "Static Progressive", splints: ["SPO 1", "SPO 2", "SPO 3"], expanded: false)
     ]
     
     override func viewDidLoad() {

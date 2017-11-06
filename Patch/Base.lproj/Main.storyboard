@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="60M-0a-R57">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="60M-0a-R57">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Categories-->
+        <!--Choose Orthotic-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Patch" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                             <constraint firstItem="qOc-EB-L8e" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="nE1-qP-M3l"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Categories" id="s3J-Be-fyO"/>
+                    <navigationItem key="navigationItem" title="Choose Orthotic" id="s3J-Be-fyO"/>
                     <connections>
                         <outlet property="searchBar" destination="VNi-xC-38Q" id="vwG-8S-vrm"/>
                         <outlet property="tableView" destination="qOc-EB-L8e" id="GQB-gG-Bi0"/>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="-733.5832083958021"/>
+            <point key="canvasLocation" x="1078" y="-735"/>
         </scene>
         <!--Thumb SpicaVC-->
         <scene sceneID="NQ0-Pd-hLd">
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55e-QW-MxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647.20000000000005" y="-735.38230884557731"/>
+            <point key="canvasLocation" x="380" y="-734"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hH5-cf-QvX">
@@ -286,7 +286,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0D-yK-09o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="-734"/>
+            <point key="canvasLocation" x="-380" y="-735"/>
         </scene>
     </scenes>
 </document>
