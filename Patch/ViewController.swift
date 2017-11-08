@@ -14,14 +14,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     var sections = [
-        Section(category: "Arm", splints: ["Arm Splint 1", "Arm Splint 2", "Arm Splint 3"], expanded: false),
-        Section(category: "Hand", splints: ["Hand Splint 1", "Hand Splint 2", "Hand Splint 3"], expanded: false),
-        Section(category: "Leg", splints: ["Leg Splint 1", "Leg Splint 2", "LegSplint 3"], expanded: false)
+        Section(category: "Basic Orthosis", splints: ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter"], expanded: false),
+        Section(category: "Elbow (EO)", splints: ["EO 1", "EO 2", "EO 3"], expanded: false),
+        Section(category: "Wrist-Hand-Finger (WHFO)", splints: ["WHFO 1", "WHFO 2", "WHFO 3"], expanded: false),
+        Section(category: "Finger", splints: ["FO 1", "FO 2", "FO 3"], expanded: false),
+        Section(category: "Static Progressive", splints: ["SPO 1", "SPO 2", "SPO 3"], expanded: false)
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,7 +76,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         tableView.endUpdates()
     }
-
-
+<<<<<<< HEAD
 }
+=======
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let simpleVC = SimpleVC()
+        simpleVC.customInit(imageName: sections[indexPath.section].splints[indexPath.row])
+        tableView.deselectRow(at: indexPath, animated:true)
+        self.navigationController?.pushViewController(simpleVC, animated: true)
+    }
+
+
+    }
+
+
+>>>>>>> 1c2112c0a3b0ab47e4dddac187820cb98cd1f866
 
