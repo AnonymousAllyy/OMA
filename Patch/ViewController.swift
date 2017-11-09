@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ExpandableHeaderViewDelegate {
     
     
+   
     @IBOutlet weak var tableView: UITableView!
+
     
     var sections = [
         Section(category: "Basic Orthosis", splints: ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter"], expanded: false),
@@ -21,8 +23,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         Section(category: "Static Progressive", splints: ["SPO 1", "SPO 2", "SPO 3"], expanded: false)
     ]
     
+    var splints = ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter", "EO 1", "EO 2", "EO 3"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
     }
     
@@ -37,6 +43,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sections[section].splints.count
+        
+      
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -63,9 +71,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell")!
-        cell.textLabel?.text = sections[indexPath.section].splints[indexPath.row]
-        return cell
+     
+       let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell")!
+       cell.textLabel?.text = sections[indexPath.section].splints[indexPath.row]
+       return cell
     }
     
     func toggleSection(header: ExpandableHeaderView, section: Int) {
@@ -83,6 +92,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated:true)
         self.navigationController?.pushViewController(simpleVC, animated: true)
     }
+    
+   
 
 
     }

@@ -11,13 +11,16 @@ import UIKit
 class SplintViewController: UIViewController {
 
     @IBOutlet weak var splintNameLabel: UILabel!
+    @IBOutlet weak var purposeLabel: UILabel!
     
     var splintName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        splintNameLabel.text = splintName
+        splintNameLabel.text = splints[myIndex]
+        purposeLabel.text = purpose[myIndex]
+        
         // Do any additional setup after loading the view.
     }
 
