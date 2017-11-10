@@ -8,8 +8,16 @@
 
 import UIKit
 
-var purpose = ["To help the resting Hand", "Purpose #2", "Support/Stabilize CMC", "Support You", "Support Me"]
-var diagnosis = ["CMC/Basal", "Diag 2", "Well this sucks", "Hi There"]
+var purpose = ["To help the resting Hand", "Purpose #2", "Support/Stabilize CMC or MPJ in opposition", "Support You", "?"]
+
+var diagnosis = ["CMC/Basal", "Diag 2", "CMC/Basal Join OA, DeQuervains, MPJ Collateral Ligament Injury", "Hi There", "Fracture and soft tissue injuries of 5th digit. Fractures of the neck, shaft, and base of 4th/5th metacarpals"]
+
+var position = ["position 1", "position 2", "CMC in mid-range opposition. MP in gentle flex. Able to oppose thumb to index finger. Can be hand or forearm based. Long-term CMC OA patient may perfer neoprene.", "position 4", "Forarm in neutral. Slight wrist extension (10-20 degrees), PIP and DIP joints (10-15 degrees( in flexion. MCP joints (50 degrees) in flexion."]
+
+var molding = ["molding the resting hand", "molding the wrist cock up", "Trace the patients hand. Label appropriate bony landmarks. Cut out design and fit to patient hand/wrist. Trace design onto thermoplastic material", "molding dorsal blocking", "Trace the patients hand. Label arropriate bony landmarks. Cut out design and fit to patient hand/wrist. Trace design onto thermoplastic material"]
+
+var final = ["checkpoints for 1", "2 checkpoints", "IP Flexion. Opposition. Ulnar/Radial Deviation. Comfort", "more", "more check points"]
+
 var sections = [
     Section(category: "Basic Orthosis", splints: ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter"], expanded: true),
     Section(category: "Elbow (EO)", splints: ["EO 1", "EO 2", "EO 3"], expanded: true),
@@ -18,29 +26,28 @@ var sections = [
     Section(category: "Static Progressive", splints: ["SPO 1", "SPO 2", "SPO 3"], expanded: true)
 ]
 
- var myIndex = 0
+var myIndex = 0
 var splints = ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter", "EO 1", "EO 2", "EO 3"]
 
 class SearchTableViewController: UITableViewController, UISearchResultsUpdating, ExpandableHeaderViewDelegate {
     
-  
     var filteredSplints = [String]()
     var searchController : UISearchController!
     var resultsController = UITableViewController()
-   var splints = ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter", "EO 1", "EO 2", "EO 3"]
+    var splints = ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter", "EO 1", "EO 2", "EO 3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.resultsController.tableView.dataSource = self
         self.resultsController.tableView.delegate = self
-        
         self.searchController = UISearchController(searchResultsController: self.resultsController)
         self.tableView.tableHeaderView = self.searchController.searchBar
         self.searchController.searchResultsUpdater = self
         definesPresentationContext = true
        
     }
+    
     func updateSearchResults( for searchController: UISearchController) {
 //        filter through splints
         self.filteredSplints = self.splints.filter { (splints:String) -> Bool in
@@ -53,8 +60,6 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
 //        update the results tableView
         self.resultsController.tableView.reloadData()
     }
-    
-    // MARK: - Table view data source
 
    override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
@@ -121,13 +126,8 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating,
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
-//        let simpleVC = SimpleVC()
-//        simpleVC.customInit(imageName: sections[indexPath.section].splints[indexPath.row])
-//        tableView.deselectRow(at: indexPath, animated:true)
-//        self.navigationController?.pushViewController(simpleVC, animated: true)
+       tableView.deselectRow(at: indexPath, animated:true)
     }
     
-
- 
 
 }

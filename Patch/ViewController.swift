@@ -87,10 +87,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let simpleVC = SimpleVC()
-        simpleVC.customInit(imageName: sections[indexPath.section].splints[indexPath.row])
-        tableView.deselectRow(at: indexPath, animated:true)
-        self.navigationController?.pushViewController(simpleVC, animated: true)
+//
+//
     }
     
    

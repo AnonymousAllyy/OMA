@@ -11,17 +11,25 @@ import UIKit
 class SplintViewController: UIViewController {
 
     @IBOutlet weak var splintNameLabel: UILabel!
-    @IBOutlet weak var purposeLabel: UILabel!
+    @IBOutlet weak var purposeLabel: UILabel!    
+    @IBOutlet weak var diagnosisLabel: UILabel!
+    @IBOutlet weak var positionLabel: UILabel!
+    @IBOutlet weak var finalLabel: UILabel!
+    @IBOutlet weak var moldingLabel: UILabel!
     
-    var splintName: String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         splintNameLabel.text = splints[myIndex]
         purposeLabel.text = purpose[myIndex]
+        diagnosisLabel.text = diagnosis[myIndex]
+        positionLabel.text = position[myIndex]
+        finalLabel.text = final[myIndex]
+        moldingLabel.text = molding[myIndex]
         
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
