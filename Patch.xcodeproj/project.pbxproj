@@ -76,21 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				41A44B591F6C1DBA0087E083 /* Main.storyboard */,
-<<<<<<< HEAD
 				9915E7A01FA770CE007496BE /* SearchTable.swift */,
 				41385D911F993F4100AA2FD4 /* Section.swift */,
 				41385D931F993F6800AA2FD4 /* ExpandableHeaderView.swift */,
 				41A44B551F6C1DBA0087E083 /* AppDelegate.swift */,
 				41A44B5C1F6C1DBA0087E083 /* Assets.xcassets */,
 				41A44B5E1F6C1DBA0087E083 /* LaunchScreen.storyboard */,
-=======
 				41385D991F9A3AA100AA2FD4 /* SplintViewController.swift */,
 				410B921A1FA265900068FB13 /* SimpleVC.swift */,
 				410B921B1FA265900068FB13 /* SimpleVC.xib */,
 				41A44B571F6C1DBA0087E083 /* ViewController.swift */,
 				41385D911F993F4100AA2FD4 /* Section.swift */,
 				41385D931F993F6800AA2FD4 /* ExpandableHeaderView.swift */,
->>>>>>> 1c2112c0a3b0ab47e4dddac187820cb98cd1f866
 				41A44B611F6C1DBA0087E083 /* Info.plist */,
 				41A44B551F6C1DBA0087E083 /* AppDelegate.swift */,
 				41A44B5E1F6C1DBA0087E083 /* LaunchScreen.storyboard */,
@@ -179,12 +176,9 @@
 				41385D9B1F9A3AA100AA2FD4 /* SplintViewController.swift in Sources */,
 				410B921C1FA265900068FB13 /* SimpleVC.swift in Sources */,
 				41385D941F993F6800AA2FD4 /* ExpandableHeaderView.swift in Sources */,
-<<<<<<< HEAD
 				9915E7A11FA770CE007496BE /* SearchTable.swift in Sources */,
-=======
 				41A44B581F6C1DBA0087E083 /* ViewController.swift in Sources */,
 				413B5DAD1FA0D95D0060AC12 /* ThumbSpicaVC.swift in Sources */,
->>>>>>> 1c2112c0a3b0ab47e4dddac187820cb98cd1f866
 				41A44B561F6C1DBA0087E083 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
