@@ -70,7 +70,7 @@
         <!--Navigation Controller-->
         <scene sceneID="yNp-r5-qX5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QKu-EQ-aVe" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="QKu-EQ-aVe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NOC-8S-13k">
                         <subviews>
