@@ -331,9 +331,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nbe-Md-Std" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1646" y="-718"/>
-                        <segue destination="60M-0a-R57" kind="relationship" relationship="rootViewController" id="T4G-Mr-crE"/>
-                    </connections>
-                </navigationController>
+            <segue destination="60M-0a-R57" kind="relationship" relationship="rootViewController" id="T4G-Mr-crE"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0D-yK-09o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-380" y="-735"/>
