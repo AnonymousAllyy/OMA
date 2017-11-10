@@ -122,7 +122,7 @@
                             <constraint firstItem="qOc-EB-L8e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7CG-2g-BEr"/>
                             <constraint firstItem="qOc-EB-L8e" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="nE1-qP-M3l"/>
                         </constraints>
-                    </view>
+                    </navigationBar>
                     <navigationItem key="navigationItem" title="Choose Orthotic" id="s3J-Be-fyO"/>
                     <connections>
                         <outlet property="searchBar" destination="VNi-xC-38Q" id="vwG-8S-vrm"/>
