@@ -130,6 +130,9 @@
                                 <state key="normal" title="Watch Video">
                                     <color key="titleColor" red="1" green="0.15505518493835868" blue="0.11902448503971719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="videoClicked:" destination="E6Y-mU-2wb" eventType="touchUpInside" id="dqp-pI-dXw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is where the final checkpoint text will go" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aby-8M-oA4">
                                 <rect key="frame" x="20" y="616" width="374" height="100"/>

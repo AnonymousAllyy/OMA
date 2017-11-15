@@ -27,6 +27,9 @@ var sections = [
 ]
 
 var myIndex = 0
+
+var videos = ["/Users/Ally/Desktop/Cat.mp4", "/Users/Ally/Desktop/Patch/Patch/Splint2.mp4"]
+
 var splints = ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter", "EO 1", "EO 2", "EO 3"]
 
 class SearchTableViewController: UITableViewController, UISearchResultsUpdating, ExpandableHeaderViewDelegate {

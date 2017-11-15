@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4100EC1B1FB4CBB700A1BC61 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		4100EC291FBC9BAE00A1BC61 /* Splint2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splint2.mp4; sourceTree = "<group>"; };
 		410B921E1FA37A8C0068FB13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		410B92201FA76B410068FB13 /* Cat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cat.mp4; path = ../../Cat.mp4; sourceTree = "<group>"; };
 		41385D911F993F4100AA2FD4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 				41A44B5E1F6C1DBA0087E083 /* LaunchScreen.storyboard */,
 				410B921E1FA37A8C0068FB13 /* Assets.xcassets */,
 				410B92201FA76B410068FB13 /* Cat.mp4 */,
+				4100EC291FBC9BAE00A1BC61 /* Splint2.mp4 */,
 				41A44B571F6C1DBA0087E083 /* ViewController.swift */,
 			);
 			path = Patch;
