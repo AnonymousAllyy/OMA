@@ -14,7 +14,8 @@ import AVFoundation
 class SplintViewController: UIViewController {
     
     
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var splintNameLabel: UILabel!
     @IBOutlet weak var purposeLabel: UILabel!    
     @IBOutlet weak var diagnosisLabel: UILabel!
@@ -33,6 +34,8 @@ class SplintViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        scrollView.contentSize = CGSizeMake(self.view.frame.width, self.view.frame.height+100)
 
         splintNameLabel.text = splints[myIndex]
         purposeLabel.text = purpose[myIndex]

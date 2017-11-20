@@ -8,7 +8,7 @@
 
 import UIKit
 
-var purpose = ["To help the resting Hand", "Purpose #2", "Support/Stabilize CMC or MPJ in opposition", "Support You", "?"]
+var purpose = ["To help the resting Hand", "Purpose #2", "Support/Stabilize CMC or MPJ in opposition", "Support You", "Another Splint"]
 
 var diagnosis = ["CMC/Basal", "Diag 2", "CMC/Basal Join OA, DeQuervains, MPJ Collateral Ligament Injury", "Hi There", "Fracture and soft tissue injuries of 5th digit. Fractures of the neck, shaft, and base of 4th/5th metacarpals"]
 
@@ -28,7 +28,7 @@ var sections = [
 
 var myIndex = 0
 
-var videos = ["/Users/Ally/Desktop/Cat.mp4", "/Users/Ally/Desktop/Patch/Patch/Splint2.mp4"]
+var videos = ["/Users/Ally/Desktop/Cat.mp4", "/Users/Ally/Desktop/Patch/Patch/Splint2.mp4", "/Users/Ally/Desktop/Patch/Patch/Splint3.mp4", "/Users/Ally/Desktop/Patch/Patch/Splint4.mp4"]
 
 var splints = ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter", "EO 1", "EO 2", "EO 3"]
 

@@ -26,6 +26,8 @@
 		41385D911F993F4100AA2FD4 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		41385D931F993F6800AA2FD4 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 		41385D991F9A3AA100AA2FD4 /* SplintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplintViewController.swift; sourceTree = "<group>"; };
+		4164D2891FC3261F00E9836C /* Splint3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splint3.mp4; sourceTree = "<group>"; };
+		4164D28A1FC3264C00E9836C /* Splint4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splint4.mp4; sourceTree = "<group>"; };
 		41A44B521F6C1DBA0087E083 /* Patch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A44B551F6C1DBA0087E083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A44B571F6C1DBA0087E083 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 				410B921E1FA37A8C0068FB13 /* Assets.xcassets */,
 				410B92201FA76B410068FB13 /* Cat.mp4 */,
 				4100EC291FBC9BAE00A1BC61 /* Splint2.mp4 */,
+				4164D2891FC3261F00E9836C /* Splint3.mp4 */,
+				4164D28A1FC3264C00E9836C /* Splint4.mp4 */,
 				41A44B571F6C1DBA0087E083 /* ViewController.swift */,
 			);
 			path = Patch;
