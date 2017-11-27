@@ -8,7 +8,7 @@
 
 import UIKit
 
-var purpose = ["To help the resting Hand", "Purpose #2", "Support/Stabilize CMC or MPJ in opposition", "Support You", "Another Splint"]
+var purpose = ["To help the resting Hand", "Purpose #2", "Support/Stabilize CMC or MPJ in opposition", "Support You", "Fractures and soft tissue injuries of 5th digit"]
 
 var diagnosis = ["CMC/Basal", "Diag 2", "CMC/Basal Join OA, DeQuervains, MPJ Collateral Ligament Injury", "Hi There", "Fracture and soft tissue injuries of 5th digit. Fractures of the neck, shaft, and base of 4th/5th metacarpals"]
 

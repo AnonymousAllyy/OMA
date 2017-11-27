@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -20,7 +21,6 @@
         <!--Orthotic Categories-->
         <scene sceneID="b61-cR-tMY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ea5-x4-EjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="B8P-SA-f8d" customClass="SearchTableViewController" customModule="Patch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9dl-Gl-Mvi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -46,6 +46,7 @@
                         <segue destination="E6Y-mU-2wb" kind="showDetail" identifier="segue" action="showViewController:sender:" id="NhO-cJ-qP5"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ea5-x4-EjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1135" y="-735"/>
         </scene>
@@ -61,8 +62,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-mH-5kS">
-                                <rect key="frame" x="0.0" y="24" width="414" height="712"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KuL-mH-5kS">
+                                <rect key="frame" x="0.0" y="49" width="414" height="712"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the purpose text will go" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdZ-S5-h0G">
                                         <rect key="frame" x="20" y="82" width="374" height="56"/>
@@ -150,31 +151,33 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ij2-kJ-15c">
                                         <rect key="frame" x="155" y="390" width="104" height="30"/>
+                                        <color key="backgroundColor" red="0.34332421639999999" green="0.55143626509999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="104" id="dgm-Q2-fP8"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Watch Video">
-                                            <color key="titleColor" red="1" green="0.15505518493835868" blue="0.11902448503971719" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="videoClicked:" destination="E6Y-mU-2wb" eventType="touchUpInside" id="dqp-pI-dXw"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the final checkpoint text will go" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aby-8M-oA4">
-                                        <rect key="frame" x="20" y="592" width="374" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="GUB-8o-ktu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="15"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splint Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMY-dB-4xC">
-                                        <rect key="frame" x="20" y="20" width="374" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Splint Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMY-dB-4xC">
+                                        <rect key="frame" x="20" y="14" width="374" height="43"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="HEV-gv-i0z"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is where the final checkpoint text will go" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aby-8M-oA4">
+                                        <rect key="frame" x="20" y="571" width="374" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="GUB-8o-ktu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -233,6 +236,7 @@
                         <outlet property="purposeLabel" destination="sdZ-S5-h0G" id="2QB-xG-3Hp"/>
                         <outlet property="scrollView" destination="KuL-mH-5kS" id="Ovt-Dw-Zb3"/>
                         <outlet property="splintNameLabel" destination="MMY-dB-4xC" id="zxm-Pp-DIG"/>
+                        <outlet property="watchVideo" destination="ij2-kJ-15c" id="rAl-af-73c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Z2-Zb-6ce" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -242,7 +246,7 @@
         <!--Home View Controller-->
         <scene sceneID="J6r-7H-JzS">
             <objects>
-                <viewController id="60M-0a-R57" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController id="60M-0a-R57" customClass="HomeViewController" customModule="Patch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Urx-cG-IhW"/>
                         <viewControllerLayoutGuide type="bottom" id="xId-Al-PBe"/>
@@ -260,38 +264,122 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-hP-WrI">
-                                <rect key="frame" x="157" y="343" width="101" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-hP-WrI">
+                                <rect key="frame" x="138" y="343" width="138" height="50"/>
+                                <color key="backgroundColor" red="0.34332421644129429" green="0.55143626512139754" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="DyZ-Rf-O5B"/>
+                                    <constraint firstAttribute="height" constant="50" id="bcb-cy-ETX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="ENTER">
-                                    <color key="titleColor" red="1" green="0.1725431835" blue="0.248780682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="B8P-SA-f8d" kind="show" id="6Ot-3Q-slv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubB-W7-2Ig">
-                                <rect key="frame" x="146" y="601" width="123" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubB-W7-2Ig">
+                                <rect key="frame" x="138" y="681" width="138" height="35"/>
+                                <color key="backgroundColor" red="0.34332421639999999" green="0.55143626509999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="3K2-ij-lYY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="About Us">
-                                    <color key="titleColor" red="1" green="0.1725431835" blue="0.248780682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BJB-mi-hua" kind="show" id="8or-8D-jbf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2AT-FW-Q14" firstAttribute="leading" secondItem="84G-U6-57h" secondAttribute="leading" id="9vw-gR-Eo3"/>
                             <constraint firstItem="2AT-FW-Q14" firstAttribute="top" secondItem="Urx-cG-IhW" secondAttribute="bottom" constant="28" id="AMy-kG-Zv4"/>
+                            <constraint firstItem="xId-Al-PBe" firstAttribute="top" secondItem="ubB-W7-2Ig" secondAttribute="bottom" constant="36" id="AW2-BQ-qvU"/>
+                            <constraint firstItem="mFJ-hP-WrI" firstAttribute="centerY" secondItem="84G-U6-57h" secondAttribute="centerY" id="BZu-mS-exq"/>
+                            <constraint firstItem="mFJ-hP-WrI" firstAttribute="leading" secondItem="ubB-W7-2Ig" secondAttribute="leading" id="CkD-zs-lMj"/>
+                            <constraint firstItem="mFJ-hP-WrI" firstAttribute="trailing" secondItem="ubB-W7-2Ig" secondAttribute="trailing" id="OqI-Lj-wX5"/>
                             <constraint firstAttribute="trailing" secondItem="2AT-FW-Q14" secondAttribute="trailing" id="SAX-c2-Qm0"/>
+                            <constraint firstItem="mFJ-hP-WrI" firstAttribute="centerX" secondItem="2AT-FW-Q14" secondAttribute="centerX" id="ve2-0V-pfA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nia-IN-TOa"/>
+                    <connections>
+                        <outlet property="aboutButton" destination="ubB-W7-2Ig" id="rH3-LN-gCX"/>
+                        <outlet property="enterButton" destination="mFJ-hP-WrI" id="qLh-Tu-rrs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55e-QW-MxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="379.71014492753625" y="-734.51086956521749"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="r5b-K6-W08">
+            <objects>
+                <viewController id="BJB-mi-hua" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bpo-yl-ctp"/>
+                        <viewControllerLayoutGuide type="bottom" id="62F-aG-qwe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z1f-kT-pml">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZQ-uM-rXT">
+                                <rect key="frame" x="20" y="318" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="NdZ-EL-q0V"/>
+                                </constraints>
+                                <string key="text">This orthotics mobile application is for EDUCATIONAL PURPOSES ONLY and is NOT used for diagnosing or to replace initial formal training</string>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DISCLAIMER:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeO-4R-VZX">
+                                <rect key="frame" x="133" y="281" width="149" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.1550551849" blue="0.119024485" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OMA was created by occupational therapy students for IRB approved research" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOr-gs-dq0">
+                                <rect key="frame" x="20" y="150" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="l9P-Rf-ne4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHt-ck-78W">
+                                <rect key="frame" x="186" y="707" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hOr-gs-dq0" firstAttribute="top" secondItem="Bpo-yl-ctp" secondAttribute="bottom" constant="86" id="2Mb-20-k6x"/>
+                            <constraint firstItem="OZQ-uM-rXT" firstAttribute="centerY" secondItem="z1f-kT-pml" secondAttribute="centerY" id="Bcu-c2-dtu"/>
+                            <constraint firstItem="OZQ-uM-rXT" firstAttribute="centerX" secondItem="JeO-4R-VZX" secondAttribute="centerX" id="NMm-5G-Q3S"/>
+                            <constraint firstItem="OZQ-uM-rXT" firstAttribute="trailing" secondItem="hOr-gs-dq0" secondAttribute="trailing" id="ReM-gR-QLe"/>
+                            <constraint firstItem="OZQ-uM-rXT" firstAttribute="top" secondItem="JeO-4R-VZX" secondAttribute="bottom" constant="16" id="Rg0-m5-61d"/>
+                            <constraint firstItem="OZQ-uM-rXT" firstAttribute="centerX" secondItem="oHt-ck-78W" secondAttribute="centerX" id="Rm9-Hw-JPe"/>
+                            <constraint firstItem="OZQ-uM-rXT" firstAttribute="leading" secondItem="z1f-kT-pml" secondAttribute="leadingMargin" id="dwz-rE-f65"/>
+                            <constraint firstItem="OZQ-uM-rXT" firstAttribute="trailing" secondItem="z1f-kT-pml" secondAttribute="trailingMargin" id="rLZ-PZ-tdQ"/>
+                            <constraint firstItem="OZQ-uM-rXT" firstAttribute="leading" secondItem="hOr-gs-dq0" secondAttribute="leading" id="rWE-62-gHR"/>
+                            <constraint firstItem="JeO-4R-VZX" firstAttribute="top" secondItem="hOr-gs-dq0" secondAttribute="bottom" constant="83" id="tJj-4E-nTF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="r82-Bo-Sq2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vob-FJ-2Qa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365.21739130434787" y="-63.586956521739133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hH5-cf-QvX">

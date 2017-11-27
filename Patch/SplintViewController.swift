@@ -14,8 +14,8 @@ import AVFoundation
 class SplintViewController: UIViewController {
     
     
+    @IBOutlet weak var watchVideo: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
-    
     @IBOutlet weak var splintNameLabel: UILabel!
     @IBOutlet weak var purposeLabel: UILabel!    
     @IBOutlet weak var diagnosisLabel: UILabel!
@@ -43,6 +43,8 @@ class SplintViewController: UIViewController {
         positionLabel.text = position[myIndex]
         finalLabel.text = final[myIndex]
         moldingLabel.text = molding[myIndex]
+        
+        watchVideo.layer.cornerRadius = 4 //adds rounded corners to button
         
         
     }
