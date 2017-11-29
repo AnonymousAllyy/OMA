@@ -8,9 +8,9 @@
 
 import UIKit
 
-var purpose = ["To help the resting Hand", "Purpose #2", "Support/Stabilize CMC or MPJ in opposition", "Support You", "Fractures and soft tissue injuries of 5th digit"]
+var purpose = ["To help the resting Hand", "This is the second purpose", "Support/Stabilize CMC or MPJ in opposition", "Support support support", "Fractures and soft tissue injuries of 5th digit"]
 
-var diagnosis = ["CMC/Basal", "Diag 2", "CMC/Basal Join OA, DeQuervains, MPJ Collateral Ligament Injury", "Hi There", "Fracture and soft tissue injuries of 5th digit. Fractures of the neck, shaft, and base of 4th/5th metacarpals"]
+var diagnosis = ["CMC/Basal", "Diag 2", "CMC/Basal Join OA, DeQuervains, MPJ Collateral Ligament Injury", "CMC/Basal Join OA", "Fracture and soft tissue injuries of 5th digit. Fractures of the neck, shaft, and base of 4th/5th metacarpals"]
 
 var position = ["position 1", "position 2", "CMC in mid-range opposition. MP in gentle flex. Able to oppose thumb to index finger. Can be hand or forearm based. Long-term CMC OA patient may perfer neoprene.", "position 4", "Forarm in neutral. Slight wrist extension (10-20 degrees), PIP and DIP joints (10-15 degrees( in flexion. MCP joints (50 degrees) in flexion."]
 
