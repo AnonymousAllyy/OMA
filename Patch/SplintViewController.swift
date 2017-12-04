@@ -14,6 +14,7 @@ import AVFoundation
 class SplintViewController: UIViewController {
     
     
+    @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var watchVideo: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var splintNameLabel: UILabel!
@@ -25,15 +26,19 @@ class SplintViewController: UIViewController {
     
     var playerViewController = AVPlayerViewController()
     var playerView = AVPlayer()
+
+    
+    //All the commented out code on this viewcontroller is to play local video files, but note that when playing local files they will not play on the actual iphone only on here while testing. This is why I went with a webview player for the time being
  
-    @IBAction func videoClicked(_ sender: AnyObject)
+ /*   @IBAction func videoClicked(_ sender: AnyObject)
     {
         playLocalVideo()
-    }
+    }*/
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getVideo(videoCode: videos[myIndex])
         
 //        scrollView.contentSize = CGSizeMake(self.view.frame.width, self.view.frame.height+100)
 
@@ -44,12 +49,16 @@ class SplintViewController: UIViewController {
         finalLabel.text = final[myIndex]
         moldingLabel.text = molding[myIndex]
         
-        watchVideo.layer.cornerRadius = 4 //adds rounded corners to button
+     //   watchVideo.layer.cornerRadius = 4 //adds rounded corners to button
         
         
     }
+    func getVideo(videoCode:String) {
+        let url = URL(string: "https://www.youtube.com/embed/\(videoCode)")
+        webView.loadRequest(URLRequest(url: url!))
+    }
     
-    func playLocalVideo() {
+ /*   func playLocalVideo() {
         
         let fileURL = NSURL(fileURLWithPath: videos[myIndex])
         playerView = AVPlayer(url: fileURL as URL)
@@ -58,7 +67,7 @@ class SplintViewController: UIViewController {
         self.present(playerViewController, animated: true) {
             self.playerViewController.player?.play()
         }
-    }
+    }*/
 
 
     override func didReceiveMemoryWarning() {

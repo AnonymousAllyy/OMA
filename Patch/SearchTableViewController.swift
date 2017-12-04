@@ -8,15 +8,35 @@
 
 import UIKit
 
-var purpose = ["To help the resting Hand", "This is the second purpose", "Support/Stabilize CMC or MPJ in opposition", "Support support support", "Fractures and soft tissue injuries of 5th digit"]
+var purpose = ["Provides neutral positioning and resting of hand/wrist",
+               "Immobilize wrist in neutral position",
+               "Support/Stabilize CMC or MPJ in opposition",
+               "Prevent stress to repaired flexor tendon",
+               "Stabilize ulnar aspect of the wrist/metacarpals/phalanges"]
 
-var diagnosis = ["CMC/Basal", "Diag 2", "CMC/Basal Join OA, DeQuervains, MPJ Collateral Ligament Injury", "CMC/Basal Join OA", "Fracture and soft tissue injuries of 5th digit. Fractures of the neck, shaft, and base of 4th/5th metacarpals"]
+var diagnosis = ["Generalized pain, overuse of hand, hemiparesis, contractures",
+                 "Distal radius fracture, carpal tunnel, flexor tendonitis, extensor tendonitis",
+                 "CMC/Basal Join OA, DeQuervains, MPJ Collateral Ligament Injury",
+                 "Repairs of flexor tendons in zone II, zone III, zone IV, and zone V",
+                 "Metacarpal fracture, Ulnar wrist instability, D4-D5 phalanx fractures"]
 
-var position = ["position 1", "position 2", "CMC in mid-range opposition. MP in gentle flex. Able to oppose thumb to index finger. Can be hand or forearm based. Long-term CMC OA patient may perfer neoprene.", "position 4", "Forarm in neutral. Slight wrist extension (10-20 degrees), PIP and DIP joints (10-15 degrees( in flexion. MCP joints (50 degrees) in flexion."]
+var position = ["Wrist in neutral, thumb opposed, Metacarpohalangeal (MP) joints in gentle flexion, Interphalangeal (IP) joints extended.",
+                "Wrist in neutral",
+                "CMC in mid-range opposition. MP in gentle flex. Able to oppose thumb to index finger. Can be hand or forearm based. Long-term CMC OA patient may perfer neoprene.",
+                "Wrist flexed to 60-70 degrees, Metacarpophalangeal (MP) joints flexed to 50-70 degrees, Interphalangeal (IP) joints extended",
+                "Metacarpophalangeal (MP) joints flexed to 60-70 degrees, Interphalangeal (IP) joints extended"]
 
-var molding = ["molding the resting hand", "molding the wrist cock up", "Trace the patients hand. Label appropriate bony landmarks. Cut out design and fit to patient hand/wrist. Trace design onto thermoplastic material", "molding dorsal blocking", "Trace the patients hand. Label arropriate bony landmarks. Cut out design and fit to patient hand/wrist. Trace design onto thermoplastic material"]
+var molding = ["Wrist hand orthosis, includes one or more nontorsion joint(s), elastic bands, turnbuckles, may include soft interface, straps, prefabricated item that has been trimmed, bent, molded, assembled, or otherwise customized to fit a specific patient by an individual with expertise ",
+               "Wrist hand orthosis, includes one or more nontorsion joint(s), elastic bands, turnbuckles, may include soft interface, straps, prefabricated item that has been trimmed, bent, molded, assembled, or otherwise customized to fit a specific patient by an individual with expertise ",
+               "Trace the patients hand. Label appropriate bony landmarks. Cut out design and fit to patient hand/wrist. Trace design onto thermoplastic material",
+               "Wrist hand orthosis, includes one or more nontorsion joint(s), elastic bands, turnbuckles, may include soft interface, straps, prefabricated item that has been trimmed, bent, molded, assembled, or otherwise customized to fit a specific patient by an individual with expertise ",
+               "Trace the patients hand. Label arropriate bony landmarks. Cut out design and fit to patient hand/wrist. Trace design onto thermoplastic material"]
 
-var final = ["checkpoints for 1", "2 checkpoints", "IP Flexion. Opposition. Ulnar/Radial Deviation. Comfort", "more", "more check points"]
+var final = ["Keep thumb free",
+             "Keep digits and thumb free",
+             "Can be hand or forearm based. Long-term CMC OA (may prefer neoprene material)",
+             "May prefer to fabricate dynamic traction to digits to prevent adhesions",
+             "May or may not include the wrist. Include digits adjacent to injury"]
 
 var sections = [
     Section(category: "Basic Orthosis", splints: ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter"], expanded: true),
@@ -28,9 +48,11 @@ var sections = [
 
 var myIndex = 0
 
-var videos = ["/Users/Ally/Desktop/Cat.mp4", "/Users/Ally/Desktop/Patch/Patch/Splint2.mp4", "/Users/Ally/Desktop/Patch/Patch/Splint3.mp4", "/Users/Ally/Desktop/Patch/Patch/Splint4.mp4"]
+var videos = ["lVFNRrL79w0", "2kp4pE21cC4", "k-cavEKkirc", "UJ0nNjZvtX4", "wIft-t-MQuE"]
 
 var splints = ["Resting Hand", "Wrist Cock-Up", "Thumb Spica", "Dorsal Blocking", "Ulnar Gutter", "EO 1", "EO 2", "EO 3"]
+
+
 
 class SearchTableViewController: UITableViewController, UISearchResultsUpdating, ExpandableHeaderViewDelegate {
     
